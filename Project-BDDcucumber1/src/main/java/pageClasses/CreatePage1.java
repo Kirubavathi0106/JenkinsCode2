@@ -51,7 +51,7 @@ public class CreatePage1 extends Base {
 	}
 
 	public void enterformDetails() {
-		Scanner sc = new Scanner(System.in);
+		//Scanner sc = new Scanner(System.in);
 
 		base.driver.findElement(fullName).sendKeys("Kirubavathi");
 		base.driver.findElement(rediffId).sendKeys("Kirubavathi0106");
@@ -93,11 +93,11 @@ public class CreatePage1 extends Base {
 //		d.selectByIndex(1);
 		
 
-		WebDriverWait wait = new WebDriverWait(base.driver, Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(captcha));
+		// WebDriverWait wait = new WebDriverWait(base.driver, Duration.ofSeconds(5));
+		// wait.until(ExpectedConditions.visibilityOfElementLocated(captcha));
 
-		System.out.println("Enter The Captcha: ");
-		base.driver.findElement(captcha).sendKeys(sc.nextLine());
+		// System.out.println("Enter The Captcha: ");
+		// base.driver.findElement(captcha).sendKeys(sc.nextLine());
 		
 
 
