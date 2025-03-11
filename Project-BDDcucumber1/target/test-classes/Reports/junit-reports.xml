@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="7.394" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Store Signin" name="Login with correct username and correct password - #1.1" time="7.215">
+<system-out><![CDATA[
+Given I navigate to the login page..........................................passed
+When I clicked signin link..................................................passed
+And I entered "user" and "pass".............................................passed
+Then I clicked signin button................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
