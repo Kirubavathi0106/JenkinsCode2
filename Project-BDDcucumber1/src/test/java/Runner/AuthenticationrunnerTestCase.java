@@ -15,11 +15,23 @@ import Utility.ExtentListener;
  * "json:src\\test\\resources\\Reports\\json-reports.json",
  * "junit:src\\test\\resources\\Reports\\junit-reports.xml" })
  */
+//
+// @CucumberOptions(features = { "src\\test\\resources\\Features\\CreateAccount.feature" }, glue = {
+// "stepdefinition" }, plugin = { "pretty", "html:src\\test\\resources\\Reports\\cucumber-reports.html",
+// 		"json:src\\test\\resources\\Reports\\json-reports.json",
+// 		"junit:src\\test\\resources\\Reports\\junit-reports.xml" })
 
-@CucumberOptions(features = { "src\\test\\resources\\Features\\CreateAccount.feature" }, glue = {
-"stepdefinition" }, plugin = { "pretty", "html:src\\test\\resources\\Reports\\cucumber-reports.html",
-		"json:src\\test\\resources\\Reports\\json-reports.json",
-		"junit:src\\test\\resources\\Reports\\junit-reports.xml" })
+@CucumberOptions(
+	    features = { "src\\test\\resources\\Features\\CreateAccount.feature" }, 
+	    glue = { "stepdefinition" }, 
+	    plugin = {
+	        "pretty",
+	        "html:target/cucumber-reports.html",
+	        "json:target/cucumber-reports.json",
+	        "junit:target/junit-reports.xml"
+	    }
+	)
+
 
 public class AuthenticationrunnerTestCase extends AbstractTestNGCucumberTests {
 	
